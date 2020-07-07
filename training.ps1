@@ -1,7 +1,7 @@
 <# Version 7.2
 .SYNOPSIS
     This is an exmaple of some basic conventions for having beautiful powershell
-    The program accepts you name and age, and greets you with the date
+    The program accepts your name and age, and greets you with your reversed name
 
 .PARAMETER Name
     Name to address you by
