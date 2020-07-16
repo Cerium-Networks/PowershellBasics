@@ -1,7 +1,11 @@
 <# Version 7.2
 .SYNOPSIS
-    This is an exmaple of some basic conventions for having beautiful powershell
-    The program accepts your name and age, and greets you with your reversed name
+    Basic conventions for having beautiful powershell
+    
+.DESCRIPTION
+    This script is an example, demonstrating some of the basic conventions of how you want your
+    powershell to be designed as. It will take in your name as a parameter- if you don't,
+    it will force you to enter it (because of the 'Parameter(Mandatory).
 
 .PARAMETER Name
     Name to address you by
@@ -13,16 +17,20 @@
     None <Typically, if there is no output, omit this section>
 
 .EXAMPLE
-    .\training Nich 22
+    .\training Nich
+    .\training -Name "Abraham Lincoln"
+    .\training -n ABBA
 
 .NOTES
-    I do not code in powershell, so I may be missing a few things. This is just what I have seen from guides
+    I am also just learning Powershell, so I may be missing a few things. This is just what I have seen from guides!
+    Feel free to email me @ nfeingold@ceriumnetworks.com (or just PM me) with any questions you may have.
 #>
 
 [CmdletBinding()] 
 param(
-    [Parameter(Mandatory = $true)]
+    [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]
+    [Alias('n')]
     [String]$Name
 )
 
