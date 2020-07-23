@@ -24,6 +24,7 @@
 .NOTES
     I am also just learning Powershell, so I may be missing a few things. This is just what I have seen from guides!
     Feel free to email me @ nfeingold@ceriumnetworks.com (or just PM me) with any questions you may have.
+    I am adding this as a note to test changes with OneDrive
 #>
 
 [CmdletBinding()] 
